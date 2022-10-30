@@ -4,6 +4,7 @@
 
 .orange-btn:hover {
   opacity: 0.8;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .orange-btn.second-btn {
@@ -24,7 +25,7 @@
 }
 .conic:hover::after {
   box-shadow: 0 0 0 1px inset white;
-  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
 }
 .conic::before {
   content: "";
