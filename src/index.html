@@ -1,334 +1,279 @@
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>@tailwindcss/forms examples</title>
-  <link rel="stylesheet" href="/css/app.css" />
-  <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
-</head>
-
-<body>
-  <div class="antialiased text-gray-900 px-6">
-    <div class="max-w-xl mx-auto py-12 divide-y md:max-w-4xl">
-      <div class="py-8">
-        <h1 class="text-4xl font-bold">@tailwindcss/forms examples</h1>
-        <p class="mt-2 text-lg text-gray-600">
-          An opinionated form reset designed to make form elements easy to style with utility
-          classes.
-        </p>
-        <div class="mt-4 flex space-x-4">
-          <a class="text-lg underline" href="https://github.com/tailwindlabs/tailwindcss-forms">Documentation</a>
-          <a class="text-lg underline" href="/kitchen-sink.html">Kitchen Sink</a>
-        </div>
-      </div>
-      <div class="py-12">
-        <h2 class="text-2xl font-bold">Unstyled</h2>
-        <p class="mt-2 text-lg text-gray-600">This is how form elements look out of the box.</p>
-        <div class="mt-8 max-w-md">
-          <div class="grid grid-cols-1 gap-6">
-            <label class="block">
-              <span class="text-gray-700">Full name</span>
-              <input type="text" class="mt-1 block w-full" placeholder="" />
-            </label>
-            <label class="block">
-              <span class="text-gray-700">Email address</span>
-              <input type="email" class="mt-1 block w-full" placeholder="john@example.com" />
-            </label>
-            <label class="block">
-              <span class="text-gray-700">When is your event?</span>
-              <input type="date" class="mt-1 block w-full" />
-            </label>
-            <label class="block">
-              <span class="text-gray-700">What type of event is it?</span>
-              <select class="block w-full mt-1">
-                <option>Corporate event</option>
-                <option>Wedding</option>
-                <option>Birthday</option>
-                <option>Other</option>
-              </select>
-            </label>
-            <label class="block">
-              <span class="text-gray-700">Additional details</span>
-              <textarea class="mt-1 block w-full" rows="3"></textarea>
-            </label>
-            <div class="block">
-              <div class="mt-2">
-                <div>
-                  <label class="inline-flex items-center">
-                    <input type="checkbox" checked />
-                    <span class="ml-2">Email me news and special offers</span>
-                  </label>
-                </div>
-              </div>
-            </div>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@tailwindcss/forms examples</title>
+    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+  </head>
+  <body class="overflow-x-hidden bg-[#1A1A1A] text-[18px] text-white">
+    <header class="header">
+      <div class="container mx-auto max-w-[1240px]">
+        <div class="flex items-center justify-between pt-14">
+          <div class="header__logo">
+            <a href="/"><img src="static/logo.svg" alt="" w="220" h="80" /></a>
+          </div>
+          <nav class="header__nav">
+            <ul class="flex space-x-12">
+              <li><a href="#" class="link">Услуги</a></li>
+              <li><a href="#" class="link">О нас</a></li>
+              <li><a href="#" class="link">Портфолио</a></li>
+              <li><a href="#" class="link">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__bar flex items-center space-x-4">
+            <a href="tel:+77761236107" class="link relative -top-[2px]"
+              ><span class="text-2xl font-bold text-orange-500">[</span>
+              +77761236107
+              <span class="text-2xl font-bold text-orange-500">]</span></a
+            >
+            <button class="switcher">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 29 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.5466 3.5V6.125M21.9713 6.57533L20.1151 8.4315M25.0466 14H22.4216M21.9713 21.4247L20.1151 19.5685M14.5466 21.875V24.5M8.97813 19.5685L7.12196 21.4247M6.67163 14H4.04663M8.97813 8.4315L7.12196 6.57533M18.9216 14C18.9216 15.1603 18.4607 16.2731 17.6402 17.0936C16.8198 17.9141 15.707 18.375 14.5466 18.375C13.3863 18.375 12.2735 17.9141 11.453 17.0936C10.6326 16.2731 10.1716 15.1603 10.1716 14C10.1716 12.8397 10.6326 11.7269 11.453 10.9064C12.2735 10.0859 13.3863 9.625 14.5466 9.625C15.707 9.625 16.8198 10.0859 17.6402 10.9064C18.4607 11.7269 18.9216 12.8397 18.9216 14V14Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button class="mobile-toggle">
+              <svg
+                width="34"
+                height="33"
+                viewBox="0 0 34 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.8125"
+                  width="6.63747"
+                  height="6.6"
+                  rx="3.3"
+                  fill="#FF6421"
+                />
+                <rect
+                  x="0.8125"
+                  y="13.2"
+                  width="6.63747"
+                  height="6.6"
+                  rx="3.3"
+                  fill="#FF6421"
+                />
+                <rect
+                  x="0.8125"
+                  y="26.4"
+                  width="6.63747"
+                  height="6.6"
+                  rx="3.3"
+                  fill="#FF6421"
+                />
+                <rect
+                  x="14.0876"
+                  width="6.63747"
+                  height="6.6"
+                  rx="3.3"
+                  fill="#FF6421"
+                />
+                <rect
+                  x="14.0876"
+                  y="13.2"
+                  width="6.63747"
+                  height="6.6"
+                  rx="3.3"
+                  fill="#FF6421"
+                />
+                <rect
+                  x="14.0876"
+                  y="26.4"
+                  width="6.63747"
+                  height="6.6"
+                  rx="3.3"
+                  fill="#FF6421"
+                />
+                <rect
+                  x="27.3625"
+                  width="6.63747"
+                  height="6.6"
+                  rx="3.3"
+                  fill="#FF6421"
+                />
+                <rect
+                  x="27.3625"
+                  y="13.2"
+                  width="6.63747"
+                  height="6.6"
+                  rx="3.3"
+                  fill="#FF6421"
+                />
+                <rect
+                  x="27.3625"
+                  y="26.4"
+                  width="6.63747"
+                  height="6.6"
+                  rx="3.3"
+                  fill="#FF6421"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
-      <div class="py-12">
-        <h2 class="text-2xl font-bold">Simple</h2>
-        <div class="mt-8 max-w-md">
-          <div class="grid grid-cols-1 gap-6">
-            <label class="block">
-              <span class="text-gray-700">Full name</span>
-              <input type="text" class="
-                    mt-1
-                    block
-                    w-full
-                    rounded-md
-                    border-gray-300
-                    shadow-sm
-                    focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-                  " placeholder="" />
-            </label>
-            <label class="block">
-              <span class="text-gray-700">Email address</span>
-              <input type="email" class="
-                    mt-1
-                    block
-                    w-full
-                    rounded-md
-                    border-gray-300
-                    shadow-sm
-                    focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-                  " placeholder="john@example.com" />
-            </label>
-            <label class="block">
-              <span class="text-gray-700">When is your event?</span>
-              <input type="date" class="
-                    mt-1
-                    block
-                    w-full
-                    rounded-md
-                    border-gray-300
-                    shadow-sm
-                    focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-                  " />
-            </label>
-            <label class="block">
-              <span class="text-gray-700">What type of event is it?</span>
-              <select class="
-                    block
-                    w-full
-                    mt-1
-                    rounded-md
-                    border-gray-300
-                    shadow-sm
-                    focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-                  ">
-                <option>Corporate event</option>
-                <option>Wedding</option>
-                <option>Birthday</option>
-                <option>Other</option>
-              </select>
-            </label>
-            <label class="block">
-              <span class="text-gray-700">Additional details</span>
-              <textarea class="
-                    mt-1
-                    block
-                    w-full
-                    rounded-md
-                    border-gray-300
-                    shadow-sm
-                    focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-                  " rows="3"></textarea>
-            </label>
-            <div class="block">
-              <div class="mt-2">
-                <div>
-                  <label class="inline-flex items-center">
-                    <input type="checkbox" class="
-                          rounded
-                          border-gray-300
-                          text-indigo-600
-                          shadow-sm
-                          focus:border-indigo-300
-                          focus:ring
-                          focus:ring-offset-0
-                          focus:ring-indigo-200
-                          focus:ring-opacity-50
-                        " checked />
-                    <span class="ml-2">Email me news and special offers</span>
-                  </label>
-                </div>
-              </div>
+    </header>
+    <section class="banner">
+      <div class="container mx-auto max-w-[1180px]">
+        <div class="banner_wrapper flex items-center justify-between py-8">
+          <div class="w-1/2">
+            <h1 class="max-w-lg text-6xl font-bold">
+              Создание сайтов в Астане
+            </h1>
+            <p class="mt-6 text-[22px]">
+              Подключите к своему бизнесу эффективные маркетинговые инструменты:
+              сайт + контекстная реклама + таргетированная реклама.
+            </p>
+            <div class="banner__buttons mt-12 flex items-center space-x-8">
+              <a href="#modal" class="orange-btn">Оставить заявку</a>
+              <a href="#brief" class="link flex items-center text-[20px]"
+                >Заполнить бриф
+                <svg
+                  class="ml-2"
+                  width="23"
+                  height="25"
+                  viewBox="0 0 23 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_123_85)">
+                    <path
+                      d="M7.19899 9.24037H4.9027C3.98917 9.24037 3.11307 9.55442 2.46711 10.1134C1.82115 10.6724 1.45825 11.4306 1.45825 12.2211V20.5192C1.45825 21.3098 1.82115 22.068 2.46711 22.627C3.11307 23.186 3.98917 23.5 4.9027 23.5H18.6805C19.594 23.5 20.4701 23.186 21.1161 22.627C21.762 22.068 22.1249 21.3098 22.1249 20.5192V12.2211C22.1249 11.4306 21.762 10.6724 21.1161 10.1134C20.4701 9.55442 19.594 9.24037 18.6805 9.24037H16.3842M7.19899 14.2083C8.99251 15.7604 9.99807 16.6306 11.7916 18.1827M11.7916 18.1827C13.5851 16.6306 14.5907 15.7604 16.3842 14.2083M11.7916 18.1827C11.7916 11.5863 11.7916 1.29166 11.7916 1.29166"
+                      stroke="#FF6421"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_123_85">
+                      <rect width="23" height="25" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
             </div>
+          </div>
+          <div class="relative flex w-1/2 justify-end">
+            <img src="static/banner-man.png" alt="" w="480" />
+            <div
+              class="orange-ball absolute -left-96 -top-96 -z-10 block h-[1500px] w-[1500px] rounded-full bg-gradient-radial from-orange-500 via-transparent to-transparent opacity-30"
+            ></div>
           </div>
         </div>
       </div>
-      <div class="py-12">
-        <h2 class="text-2xl font-bold">Underline</h2>
-        <div class="mt-8 max-w-md">
-          <div class="grid grid-cols-1 gap-6">
-            <label class="block">
-              <span class="text-gray-700">Full name</span>
-              <input type="text" class="
-                    mt-0
-                    block
-                    w-full
-                    px-0.5
-                    border-0 border-b-2 border-gray-200
-                    focus:ring-0 focus:border-black
-                  " placeholder="" />
-            </label>
-            <label class="block">
-              <span class="text-gray-700">Email address</span>
-              <input type="email" class="
-                    mt-0
-                    block
-                    w-full
-                    px-0.5
-                    border-0 border-b-2 border-gray-200
-                    focus:ring-0 focus:border-black
-                  " placeholder="john@example.com" />
-            </label>
-            <label class="block">
-              <span class="text-gray-700">When is your event?</span>
-              <input type="date" class="
-                    mt-0
-                    block
-                    w-full
-                    px-0.5
-                    border-0 border-b-2 border-gray-200
-                    focus:ring-0 focus:border-black
-                  " />
-            </label>
-            <label class="block">
-              <span class="text-gray-700">What type of event is it?</span>
-              <select class="
-                    block
-                    w-full
-                    mt-0
-                    px-0.5
-                    border-0 border-b-2 border-gray-200
-                    focus:ring-0 focus:border-black
-                  ">
-                <option>Corporate event</option>
-                <option>Wedding</option>
-                <option>Birthday</option>
-                <option>Other</option>
-              </select>
-            </label>
-            <label class="block">
-              <span class="text-gray-700">Additional details</span>
-              <textarea class="
-                    mt-0
-                    block
-                    w-full
-                    px-0.5
-                    border-0 border-b-2 border-gray-200
-                    focus:ring-0 focus:border-black
-                  " rows="2"></textarea>
-            </label>
-            <div class="block">
-              <div class="mt-2">
-                <div>
-                  <label class="inline-flex items-center">
-                    <input type="checkbox" class="
-                          border-gray-300 border-2
-                          text-black
-                          focus:border-gray-300 focus:ring-black
-                        " />
-                    <span class="ml-2">Email me news and special offers</span>
-                  </label>
-                </div>
+    </section>
+    <section class="partners">
+      <div class="container mx-auto max-w-[1180px]">
+        <div
+          class="h-36 w-full rounded-3xl border border-gray-600 bg-gray-300 bg-opacity-10 bg-clip-padding backdrop-blur-sm backdrop-filter"
+        >
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper px-8">
+              <div class="swiper-slide grid items-center justify-center">
+                <img
+                  src="static/partners/megapharma.png"
+                  alt=""
+                  class="w-36 cursor-pointer grayscale hover:grayscale-0"
+                />
+              </div>
+              <div class="swiper-slide grid items-center justify-center">
+                <img
+                  src="static/partners/fortboyard.png"
+                  alt=""
+                  class="cursor-pointer grayscale hover:grayscale-0"
+                />
+              </div>
+              <div class="swiper-slide grid items-center justify-center">
+                <img
+                  src="static/partners/sana.png"
+                  alt=""
+                  class="cursor-pointer grayscale hover:grayscale-0"
+                />
+              </div>
+              <div class="swiper-slide grid items-center justify-center">
+                <img
+                  src="static/partners/oraltrans.png"
+                  alt=""
+                  class="cursor-pointer grayscale hover:grayscale-0"
+                />
+              </div>
+              <div class="swiper-slide grid items-center justify-center">
+                <img
+                  src="static/partners/este-design.png"
+                  alt=""
+                  class="cursor-pointer grayscale hover:grayscale-0"
+                />
+              </div>
+              <div class="swiper-slide grid items-center justify-center">
+                <img
+                  src="static/partners/birtal.png"
+                  alt=""
+                  class="cursor-pointer grayscale hover:grayscale-0"
+                />
+              </div>
+              <div class="swiper-slide grid items-center justify-center">
+                <img
+                  src="static/partners/esg-club.png"
+                  alt=""
+                  class="cursor-pointer grayscale hover:grayscale-0"
+                />
+              </div>
+              <div class="swiper-slide grid items-center justify-center">
+                <img
+                  src="static/partners/greenlights.png"
+                  alt=""
+                  class="cursor-pointer grayscale hover:grayscale-0"
+                />
+              </div>
+              <div class="swiper-slide grid items-center justify-center">
+                <img
+                  src="static/partners/mps.png"
+                  alt=""
+                  class="cursor-pointer grayscale hover:grayscale-0"
+                />
+              </div>
+              <div class="swiper-slide grid items-center justify-center">
+                <img
+                  src="static/partners/qiche-x.png"
+                  alt=""
+                  class="cursor-pointer grayscale hover:grayscale-0"
+                />
+              </div>
+              <div class="swiper-slide grid items-center justify-center">
+                <img
+                  src="static/partners/damankomir.png"
+                  alt=""
+                  class="cursor-pointer grayscale hover:grayscale-0"
+                />
+              </div>
+              <div class="swiper-slide grid items-center justify-center">
+                <img
+                  src="static/partners/qrtrace.png"
+                  alt=""
+                  class="cursor-pointer grayscale hover:grayscale-0"
+                />
               </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
-      <div class="py-12">
-        <h2 class="text-2xl font-bold">Solid</h2>
-        <div class="mt-8 max-w-md">
-          <div class="grid grid-cols-1 gap-6">
-            <label class="block">
-              <span class="text-gray-700">Full name</span>
-              <input type="text" class="
-                    mt-1
-                    block
-                    w-full
-                    rounded-md
-                    bg-gray-100
-                    border-transparent
-                    focus:border-gray-500 focus:bg-white focus:ring-0
-                  " placeholder="" />
-            </label>
-            <label class="block">
-              <span class="text-gray-700">Email address</span>
-              <input type="email" class="
-                    mt-1
-                    block
-                    w-full
-                    rounded-md
-                    bg-gray-100
-                    border-transparent
-                    focus:border-gray-500 focus:bg-white focus:ring-0
-                  " placeholder="john@example.com" />
-            </label>
-            <label class="block">
-              <span class="text-gray-700">When is your event?</span>
-              <input type="date" class="
-                    mt-1
-                    block
-                    w-full
-                    rounded-md
-                    bg-gray-100
-                    border-transparent
-                    focus:border-gray-500 focus:bg-white focus:ring-0
-                  " />
-            </label>
-            <label class="block">
-              <span class="text-gray-700">What type of event is it?</span>
-              <select class="
-                    block
-                    w-full
-                    mt-1
-                    rounded-md
-                    bg-gray-100
-                    border-transparent
-                    focus:border-gray-500 focus:bg-white focus:ring-0
-                  ">
-                <option>Corporate event</option>
-                <option>Wedding</option>
-                <option>Birthday</option>
-                <option>Other</option>
-              </select>
-            </label>
-            <label class="block">
-              <span class="text-gray-700">Additional details</span>
-              <textarea class="
-                    mt-1
-                    block
-                    w-full
-                    rounded-md
-                    bg-gray-100
-                    border-transparent
-                    focus:border-gray-500 focus:bg-white focus:ring-0
-                  " rows="3"></textarea>
-            </label>
-            <div class="block">
-              <div class="mt-2">
-                <div>
-                  <label class="inline-flex items-center">
-                    <input type="checkbox" class="
-                          rounded
-                          bg-gray-200
-                          border-transparent
-                          focus:border-transparent focus:bg-gray-200
-                          text-gray-700
-                          focus:ring-1 focus:ring-offset-2 focus:ring-gray-500
-                        " />
-                    <span class="ml-2">Email me news and special offers</span>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-
+    </section>
+  </body>
 </html>

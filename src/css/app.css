@@ -5,3 +5,5 @@
 @import "./components";
 
 @import "tailwindcss/utilities";
+
+@import "../../node_modules/swiper/swiper-bundle.css";
