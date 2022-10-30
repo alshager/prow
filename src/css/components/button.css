@@ -22,6 +22,10 @@
   overflow: hidden;
   background-color: #1a232a;
 }
+.conic:hover::after {
+  box-shadow: 0 0 0 1px inset white;
+  transition: box-shadow 0.2s ease-in-out;
+}
 .conic::before {
   content: "";
   position: absolute;
