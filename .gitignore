@@ -3,7 +3,6 @@ node_modules/
 .env
 
 # Dist directory generated assets
-dist/
 docs/
 
 # OS junk
