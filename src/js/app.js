@@ -7,24 +7,18 @@ import(/* webpackChunkName: "myModule", webpackPrefetch: true */ './dynamic_impo
 console.log('Hello from app.js');
 
 const swiper = new Swiper('.mySwiper', {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  breakpoints: {
-    '@0.00': {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    '@0.75': {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    '@1.00': {
-      slidesPerView: 3,
-      spaceBetween: 40,
-    },
-    '@1.50': {
-      slidesPerView: 6,
-      spaceBetween: 20,
-    },
+  loop: true,
+  freeMode: true,
+  spaceBetween: 0,
+  grabCursor: true,
+  slidesPerView: 6,
+  loop: true,
+  autoplay: {
+    delay: 1,
+    disableOnInteraction: false,
   },
+  freeMode: true,
+  speed: 10000,
+  freeModeMomentum: false,
+  spaceBetween: 10,
 });

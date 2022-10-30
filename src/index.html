@@ -180,7 +180,7 @@
     <section class="partners">
       <div class="container mx-auto max-w-[1180px]">
         <div
-          class="h-36 w-full rounded-3xl border border-gray-600 bg-gray-300 bg-opacity-10 bg-clip-padding backdrop-blur-sm backdrop-filter"
+          class="partners_wrapper h-36 w-full rounded-3xl bg-gray-300 bg-opacity-10 bg-clip-padding backdrop-blur-sm backdrop-filter"
         >
           <!-- Swiper -->
           <div class="swiper mySwiper">
@@ -277,11 +277,9 @@
     </section>
     <section class="services">
       <div class="container relative mx-auto max-w-[1180px] py-20">
-        <div
-          class="services__sub inline-flex overflow-x-hidden border-y border-y-orange-500"
-        >
-          <div class="subheading py-4 shadow-2xl shadow-orange-500">
-            <h2 class="bg-none">Услуги</h2>
+        <div class="relative inline-flex">
+          <div class="subheading-wrapper py-4">
+            <div><h2 class="subheading bg-none">Услуги</h2></div>
           </div>
         </div>
         <div class="mt-8 flex justify-between">
@@ -301,12 +299,14 @@
             <div class="service__name mt-2">
               <h2 class="text-3xl font-bold">Лендинг</h2>
             </div>
-            <p class="service__desc mt-2 max-w-xs text-xl">
+            <p class="service__desc mt-2 max-w-xs text-[18px]">
               Одностраничный сайт для сбора контактов от посетителей или продажи
               товара/услуги
             </p>
             <div class="mt-8 flex">
-              <a href="#modal" class="orange-btn">Заказать лендинг</a>
+              <a href="#modal" class="orange-btn second-btn"
+                >Заказать лендинг</a
+              >
             </div>
           </div>
 
@@ -322,12 +322,12 @@
             <div class="service__name mt-2">
               <h2 class="text-3xl font-bold">Многостраничный сайт</h2>
             </div>
-            <p class="service__desc mt-2 max-w-xs text-xl">
+            <p class="service__desc mt-2 max-w-xs text-[18px]">
               Классический сайт, навигация по которому осуществляется с помощью
               меню
             </p>
             <div class="mt-8 flex">
-              <a href="#modal" class="orange-btn">Заказать сайт</a>
+              <a href="#modal" class="orange-btn second-btn">Заказать сайт</a>
             </div>
           </div>
 
@@ -343,13 +343,24 @@
             <div class="service__name mt-2">
               <h2 class="text-3xl font-bold">Интернет магазин</h2>
             </div>
-            <p class="service__desc mt-2 text-xl">
+            <p class="service__desc mt-2 text-[18px]">
               Сайт, позволяющий сформировать онлайн заказ на покупку, выбрать
               способ оплаты и доставки заказа, оплатить заказ
             </p>
             <div class="mt-8 flex">
-              <a href="#modal" class="orange-btn">Заказать магазин</a>
+              <a href="#modal" class="orange-btn second-btn"
+                >Заказать магазин</a
+              >
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="futures">
+      <div class="container mx-auto max-w-[1180px]">
+        <div class="relative inline-flex">
+          <div class="subheading-wrapper py-4">
+            <div><h2 class="subheading bg-none">Наш подход к работе</h2></div>
           </div>
         </div>
       </div>
