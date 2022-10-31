@@ -25,7 +25,7 @@
     "webpack-dev-server": "^4.10.1"
   },
   "browserslist": "last 3 years",
-  "name": "webpack-tailwindcss",
+  "name": "prow",
   "version": "1.2.0",
   "description": "Webpack + TailwindCSS + esbuild",
   "author": "Paweł Kowalski <pavelloz@gmail.com>",

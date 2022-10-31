@@ -7,3 +7,4 @@ docs/
 
 # OS junk
 .DS_Store
+.vercel
