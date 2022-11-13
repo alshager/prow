@@ -24,7 +24,7 @@
   background-color: #1a232a;
 }
 .conic:hover::after {
-  box-shadow: 0 0 0 1px inset white;
+  box-shadow: 0 0 0 0px inset white;
   transition: box-shadow 0.3s ease-in-out;
 }
 .conic::before {
@@ -51,9 +51,9 @@
   position: absolute;
   z-index: -1;
   left: 1px;
-  top: 1px;
-  width: calc(100% - 2px);
-  height: calc(100% - 2px);
+  top: 2px;
+  width: calc(100% - 3px);
+  height: calc(100% - 4px);
   background: #c0501f;
   border-radius: 9999px;
 }

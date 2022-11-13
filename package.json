@@ -31,6 +31,7 @@
   "author": "Paweł Kowalski <pavelloz@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "alpinejs": "^3.10.5",
     "swiper": "^8.4.4"
   }
 }

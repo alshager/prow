@@ -6,6 +6,12 @@ import(/* webpackChunkName: "myModule", webpackPrefetch: true */ './dynamic_impo
 
 console.log('Hello from app.js');
 
+import Alpine from 'alpinejs';
+
+window.Alpine = Alpine;
+
+Alpine.start();
+
 const swiper = new Swiper('.mySwiper', {
   loop: true,
   freeMode: true,
@@ -21,4 +27,11 @@ const swiper = new Swiper('.mySwiper', {
   speed: 10000,
   freeModeMomentum: false,
   spaceBetween: 10,
+});
+
+const icons = document.querySelectorAll('.icon');
+icons.forEach((icon) => {
+  icon.addEventListener('click', (event) => {
+    icon.classList.toggle('open');
+  });
 });
